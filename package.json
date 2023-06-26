@@ -1,6 +1,6 @@
 {
-  "name": "@thetribeio/strapi-provider-sms-smsenvoi",
-  "version": "1.0.0",
+  "name": "@thetribe/strapi-provider-sms-smsenvoi",
+  "version": "1.0.1",
   "description": "SMSEnvoi provider for Strapi 4",
   "keywords": [
     "strapi",
@@ -8,9 +8,6 @@
     "provider",
     "smsenvoi"
   ],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/thetribeio"
-  },
   "bugs": {
     "url": "https://github.com/thetribeio/strapi-provider-sms-smsenvoi/issues"
   },
@@ -24,7 +21,6 @@
     "lib": "./lib"
   },
   "scripts": {
-    "lint": "eslint .",
     "publish:latest": "npm publish --access public --tag latest"
   },
   "dependencies": {
