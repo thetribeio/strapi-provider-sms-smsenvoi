@@ -1,5 +1,7 @@
 # strapi-provider-sms-smsenvoi
 
+Note: this package needs to be used with a sms provider for Strapi, such as [TODO]
+
 ## Example
 
 **Path -** `config/plugins.js`
