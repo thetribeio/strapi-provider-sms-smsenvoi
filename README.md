@@ -7,7 +7,7 @@
 ```js
 module.exports = ({ env }) => ({
   // ...
-  email: {
+  sms: {
     config: {
       provider: 'smsenvoi',
       providerOptions: {
@@ -32,7 +32,7 @@ You can override the default configurations for specific environments. E.g. for
 
 ```js
 module.exports = ({ env }) => ({
-  email: {
+  sms: {
     config: {
       provider: 'smsenvoi',
       providerOptions: {
