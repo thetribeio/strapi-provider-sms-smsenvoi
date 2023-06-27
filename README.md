@@ -1,5 +1,11 @@
 # strapi-provider-sms-smsenvoi
 
+Note: this package needs to be used with a sms provider for Strapi, such as https://github.com/thetribeio/strapi-plugin-sms.
+
+## Credentials
+
+Check [smsenvoi authentication instruction](https://developers.smsenvoi.com/?java#authenticate-using-a-user-token) to get user key and access token
+
 ## Example
 
 **Path -** `config/plugins.js`
@@ -7,7 +13,7 @@
 ```js
 module.exports = ({ env }) => ({
   // ...
-  email: {
+  sms: {
     config: {
       provider: 'smsenvoi',
       providerOptions: {
@@ -15,7 +21,7 @@ module.exports = ({ env }) => ({
         accessToken: env('SMS_ENVOI_ACCESS_TOKEN')
       },
       settings: {
-        defaultSender: 'Strapi'
+        defaultSender: env('SMS_ENVOI_ACCESS_TOKEN', 'Strapi')
       },
     },
   },
@@ -32,7 +38,7 @@ You can override the default configurations for specific environments. E.g. for
 
 ```js
 module.exports = ({ env }) => ({
-  email: {
+  sms: {
     config: {
       provider: 'smsenvoi',
       providerOptions: {
@@ -40,7 +46,7 @@ module.exports = ({ env }) => ({
         accessToken: env('SMS_ENVOI_ACCESS_TOKEN')
       },
       settings: {
-        defaultSender: 'My Dev Env'
+        defaultSender: env('SMS_ENVOI_ACCESS_TOKEN', 'Strapi')
       },
     },
   },
