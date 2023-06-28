@@ -1,6 +1,6 @@
 {
   "name": "@thetribe/strapi-provider-sms-smsenvoi",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "SMSEnvoi provider for Strapi 4",
   "keywords": [
     "strapi",
